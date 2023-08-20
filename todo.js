@@ -51,7 +51,7 @@ function addItem(e) {
     const delete_item = document.createElement('button');
     delete_item.classList.add('delete', 'btn', 'btn-danger', 'fa', 'fa-solid', 'fa-eraser');
 
-    //append the edit_item button and "delete_item" button to tem_action 
+    //append the edit_item button and delete_item button to tem_action 
     //grouping them together as actions associated with an item
     item_action.appendChild(edit_item);
     item_action.appendChild(delete_item);
@@ -73,7 +73,7 @@ function addItem(e) {
         }
     });
 
-    //when clicked, it removes the "item" element from the toDoContainer, deleting the item from the list
+    //when clicked, it removes the item element from the toDoContainer, deleting the item from the list
     delete_item.addEventListener('click', (e) => {
         toDoContainer.removeChild(item);
     });
